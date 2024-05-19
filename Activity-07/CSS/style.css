@@ -33,7 +33,10 @@ section {
         }
             
 .fontcolor {
-    color: blue; text-align: center;
+    color: blue; text-align: center; 
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal; /*searched the Freeman style font on Google and applied it here*/
             }
         
 footer {
