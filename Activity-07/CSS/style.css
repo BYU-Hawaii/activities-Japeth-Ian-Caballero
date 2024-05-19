@@ -25,6 +25,12 @@ section {
 #baja {
     width: 100%; border: 3px solid whitesmoke; border-radius: 15px;
         }
+
+#trophy {
+    width: 560px; height: 315px; /*added width and height for the iframe */
+    border: 3px solid brown;  /*added border with color for the iframe*/
+    border-radius: 15px; /*added border radius for the iframe*/
+        }
             
 .fontcolor {
     color: blue; text-align: center;
