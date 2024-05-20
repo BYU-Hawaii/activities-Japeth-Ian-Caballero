@@ -1,4 +1,4 @@
-figure {
+/* figure {
     margin: 20px 0;
     padding: 10px;
     border: 1px solid #ddd;
@@ -6,7 +6,7 @@ figure {
 }
 
 figure img {
-    max-width: 100%; /* To ensure it's responsive and doesn't overflow its container */
+    max-width: 100%; /* To ensure it's responsive and doesn't overflow its container 
     border-radius: 8px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
@@ -17,4 +17,9 @@ figcaption {
     text-align: center;
     color: #555;
     margin-top: 10px;
-}
+
+
+    #56585D <-- color for places pages background
+    
+}*/
+
