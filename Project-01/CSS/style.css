@@ -34,11 +34,20 @@ nav a:hover {
 
 section {
     padding: 20px;
-    color: rgb(209, 181, 144);
+    color: whitesmoke;
 }
 
 ul.custom-bullet {
     list-style-image: url('/Project-01/images/bulletpoint.png');
+}
+
+ul.custom-bullet li {
+    font-weight: bold;
+}
+
+mark {
+    background-color: lightslategray; /* Change this to any of the suggested colors */
+    color: #FFFFFF;
 }
 
 figure {
@@ -51,6 +60,8 @@ figure img {
     border-radius: 8px;
     height: auto;
 }
+
+
 
 /* figure {
     margin: 20px 0;
