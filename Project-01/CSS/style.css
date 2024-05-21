@@ -13,6 +13,10 @@ header, footer {
     padding: 1em 0;
 }
 
+#footnote {
+    font-size: small;
+}
+
 nav {
     background-color: #56585D;
     overflow: hidden;
