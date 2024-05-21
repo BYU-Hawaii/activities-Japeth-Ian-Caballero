@@ -37,7 +37,7 @@ section {
 }
 
 ul.custom-bullet {
-    list-style-image: url('/Project-01/images/');
+    list-style-image: url('/Project-01/images/bullet-point.png');
 }
 
 figure {
