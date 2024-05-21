@@ -1,32 +1,6 @@
-/* figure {
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
-}
-
-figure img {
-    max-width: 100%; /* To ensure it's responsive and doesn't overflow its container 
-    border-radius: 8px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-figcaption {
-    font-size: 0.9em;
-    font-weight: bold;
-    text-align: center;
-    color: #555;
-    margin-top: 10px;
-
-
-    #56585D <-- color for places pages background
-    
-}*/
-
-/* CSS/styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../images/bgphoto.jpg');
+    background-image: url('/Project-01/images/bgphoto.jpg');
     background-size: cover;
     color: #333;
     margin: 0;
@@ -63,7 +37,7 @@ section {
 }
 
 ul.custom-bullet {
-    list-style-image: url('project');
+    list-style-image: url('/Project-01/images/bullet-point.png');
 }
 
 figure {
@@ -75,3 +49,30 @@ figure img {
     max-width: 100%;
     height: auto;
 }
+
+/* figure {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+figure img {
+    max-width: 100%; /* To ensure it's responsive and doesn't overflow its container 
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    color: #555;
+    margin-top: 10px;
+
+
+    #56585D <-- color for places pages background
+    
+}*/
+
+/* CSS/styles.css */
