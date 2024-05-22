@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(/Project-01/images/background1.jpg);
+    background-image: url(images/background1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -45,7 +45,7 @@ section {
 }
 
 ul.custom-bullet {
-    list-style-image: url(/Project-01/images/bulletpoint.png);
+    list-style-image: url(images/bulletpoint.png);
 }
 
 ul.custom-bullet li {
