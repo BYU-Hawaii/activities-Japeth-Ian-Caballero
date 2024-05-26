@@ -19,6 +19,7 @@ nav ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: width 2s;
   }
   
   nav li a:hover {
@@ -26,7 +27,7 @@ nav ul {
     color: black;
     font-style: italic;
     font-weight: bold;
-    
+    width: 100px;
   }
 
   body {
