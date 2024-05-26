@@ -1,26 +1,40 @@
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  nav li {
-    float: left;
-  }
-  
-  nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav li a:hover {
-    background-color: #111;
-  }
+  list-style-type: none;
+  margin: 10px 10px;
+  padding: 1px;
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 5px 10px slategray;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: width 2s;
+}
+
+nav li a:hover {
+  background-color: white;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  width: 100px;
+}
+
+body {
+  background-color: #81D4FA;
+  text-align: center;
+  color: white;
+}
 
 .flex-container {
     display: flex;
