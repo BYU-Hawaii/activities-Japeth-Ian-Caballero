@@ -30,9 +30,19 @@ nav li a:hover {
   width: 100px;
 }
 
-body {
-  background-color: #81D4FA;
+nav li a:active {
+  background-color: white;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  width: 100px;
+}
+
+header, footer {
+  background-color: #8E7D79;
   color: white;
+  text-align: center;
+  padding: 1px;
 }
 
 .flex-container {
@@ -48,7 +58,7 @@ body {
 }
 
 img {
-  max-width: 80%;
+  max-width: 70%;
   border-radius: 8px;
   margin: 1px;
 }
@@ -62,12 +72,4 @@ img {
   content: "";
   clear: both;
   display: table;
-}
-
-footer {
-  flex: 0 0 auto;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1px;
 }
