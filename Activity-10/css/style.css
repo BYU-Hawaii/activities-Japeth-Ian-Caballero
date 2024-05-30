@@ -1,25 +1,32 @@
 body {
-  background color: forestgreen;
+  background-color: forestgreen; /* Corrected property name */
   margin: 0;
-  font-family: Gil Sans;
+  font-family: 'Protest Riot', sans-serif; /* Ensuring the font family matches the linked font */
 }
 
 header {
-  background-color: G0ld;
+  background-color: gold; /* Corrected color value */
   color: #004d00;
   text-align: center;
   font-size: 2em;
-  paddding: 20px;
+  padding: 20px; /* Corrected property name */
   margin: 0;
 }
 
-.nav {
+nav {
   background-color: #2e1a1a;
   width: 100%;
   margin: 0;
-  padding: 0 5px;
-  position: sticky;
+  padding: 15px 15px;
   top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  /* justify-content: left; /* Centering the navigation */
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
@@ -31,40 +38,35 @@ nav li:last-child {
   border-right: none;
 }
 
-nav ul {
-  list-style-type: none;
-  display: inline-flex;
-  align-items: center;
-}
-
 nav a {
   text-decoration: none;
   color: gold;
-  font-weight: bold;
+  font-weight: none;
   padding: 14px 16px;
 }
 
-nav a::hover {
+nav a:hover { /* Corrected pseudo-class syntax */
   background-color: gold;
   color: #2e1a1a;
 }
 
 main {
   background-color: lightgreen;
-  margin: 50px 100;
+  margin: 50px 100px; /* Added unit for the second value */
   padding: 50px;
+  border-radius: 15px; /* Added border radius to match the screenshot */
 }
 
-garden {
+.garden { /* Corrected selector to class to match HTML */
   border: 5px solid brown;
   border-radius: 30px;
   box-shadow: 5px 5px 15px grey;
-  height: 30;
+  height: 300px; /* Added unit */
   width: 30%;
 }
 
 section {
-  margintop: 30px;
+  margin-top: 30px; /* Corrected property name */
 }
 
 h2 {
