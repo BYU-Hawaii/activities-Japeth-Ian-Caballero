@@ -1,11 +1,11 @@
 .grid-container-body {
     display: grid;
     grid-template-areas: 
-    'header header header'
-    'sidebar content content'
-    'footer footer footer'
-    ;
-
+    'sidebar'
+    'header'
+    'content'
+    'footer';
+    grid-template-columns: 1fr 2fr 1fr;
     gap: 10px;
     padding: 20px;
 }
@@ -65,3 +65,23 @@
     grid-column: 2/4;
     border-radius: 100px;
 }
+
+@media (min-width: 768px) {
+    .grid-container-body {
+       grid-template-areas: 
+       'header header header'
+       'sidebar content content'
+       'footer footer footer';
+    }
+}
+ 
+/* @media (min-width: 1024px) {
+    .grid-container-body {
+       grid-template-areas: 
+       'header header header'
+       'sidebar content content'
+       'footer footer footer';
+    }
+ } */
+
+ /* browserstack.com/responsive => website for checking responsiveness on different screen sizes */
