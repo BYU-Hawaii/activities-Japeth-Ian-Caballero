@@ -1,0 +1,87 @@
+.grid-container-body {
+    display: grid;
+    grid-template-areas: 
+    'sidebar'
+    'header'
+    'content'
+    'footer';
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.header {
+    grid-area: header;
+    background-color: skyblue;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: lightslategray;
+}
+
+.content {
+    grid-area: content;
+    background-color: sandybrown;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: skyblue;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px;
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #123456;
+}
+
+.item1 {
+    grid-column: 1/3;
+    border-radius: 8px;
+}
+
+.item2 {
+    grid-column: 3/4;
+}
+
+.item3 {
+    grid-column: 1/2;
+}
+
+.item4 {
+    grid-column: 2/4;
+    border-radius: 100px;
+}
+
+@media (min-width: 768px) {
+    .grid-container-body {
+       grid-template-areas: 
+       'header header header'
+       'sidebar content content'
+       'footer footer footer';
+    }
+}
+ 
+/* @media (min-width: 1024px) {
+    .grid-container-body {
+       grid-template-areas: 
+       'header header header'
+       'sidebar content content'
+       'footer footer footer';
+    }
+ } */
+
+ /* browserstack.com/responsive => website for checking responsiveness on different screen sizes */
