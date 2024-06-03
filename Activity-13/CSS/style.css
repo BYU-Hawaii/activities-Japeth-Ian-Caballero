@@ -1,4 +1,4 @@
-.grid-container-body { /*Change background color for every change in screen sizes*/
+.grid-container-body {
     display: grid;
     grid-template-areas: 
     'sidebar'
@@ -75,11 +75,13 @@
     }
 }
  
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     .grid-container-body {
        grid-template-areas: 
        'header header header'
        'sidebar content content'
-       'sidebar footer footer';
+       'footer footer footer';
     }
- }
+ } */
+
+ /* browserstack.com/responsive => website for checking responsiveness on different screen sizes */
