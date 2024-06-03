@@ -21,6 +21,30 @@
     background-color: lightslategray;
 }
 
+/* nav ul {
+    background-color: #56585D;
+    overflow: hidden;
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;    
+    
+}
+
+/* nav li a {
+    float: left;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #DDDDDD;
+    color: black;
+} */
+
 .content {
     grid-area: content;
     background-color: springgreen;
