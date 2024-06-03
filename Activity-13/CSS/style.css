@@ -1,8 +1,8 @@
-.grid-container-body {
+.grid-container-body { /*Change background color for every change in screen sizes*/
     display: grid;
     grid-template-areas: 
-    'sidebar'
     'header'
+    'sidebar'
     'content'
     'footer';
     grid-template-columns: 1fr 2fr 1fr;
@@ -69,19 +69,22 @@
 @media (min-width: 768px) {
     .grid-container-body {
        grid-template-areas: 
-       'header header header'
+       'header header'
        'sidebar content content'
-       'footer footer footer';
+       'sidebar footer footer';
+       background-color: ;
     }
 }
  
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
     .grid-container-body {
        grid-template-areas: 
        'header header header'
        'sidebar content content'
        'footer footer footer';
+       background-color: ;
     }
- } */
+ } 
 
- /* browserstack.com/responsive => website for checking responsiveness on different screen sizes */
+ /* browserstack.com/responsive 
+    => website for checking responsiveness on different screen sizes */
