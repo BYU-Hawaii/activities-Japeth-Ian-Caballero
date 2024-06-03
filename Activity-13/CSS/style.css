@@ -23,7 +23,7 @@
 
 .content {
     grid-area: content;
-    background-color: sandybrown;
+    background-color: springgreen;
 }
 
 .footer {
@@ -69,10 +69,14 @@
 @media (min-width: 768px) {
     .grid-container-body {
        grid-template-areas: 
-       'header header'
-       'sidebar content content'
-       'sidebar footer footer';
-       background-color: ;
+        'header header'
+        'sidebar content content'
+        'sidebar footer footer';
+    }
+
+    .content {
+        grid-area: content;
+        background-color: bisque;
     }
 }
  
@@ -82,7 +86,11 @@
        'header header header'
        'sidebar content content'
        'footer footer footer';
-       background-color: ;
+    }
+
+    .content {
+        grid-area: content;
+        background-color: sandybrown;
     }
  } 
 
