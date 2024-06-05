@@ -21,31 +21,25 @@
     background-color: lightslategray;
 }
 
-nav ul {
-    /* background-color: #56585D;
-    overflow: hidden; 
-    border: 1px solid blue; */
+.sidebar nav ul {
     list-style-type: none;
-    width: 10px;
-    height: 10px;
     padding: 0;
 }
 
-nav li a {
+.sidebar nav li a {
     display: block;
-    float: center;
     color: white;
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-nav li a:hover {
+.sidebar nav li a:hover {
     background-color: #DDDDDD;
     color: black;
 } 
 
-nav ul li a:active {
+.sidebar nav li a.active {
     background-color: #DDDDDD;
     color: black;
 }
