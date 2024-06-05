@@ -21,18 +21,20 @@
     background-color: lightslategray;
 }
 
-/* nav ul {
-    background-color: #56585D;
-    overflow: hidden;
-    display: block;
-    width: 100px;
-    height: 100px;
+nav ul {
+    /* background-color: #56585D;
+    overflow: hidden; 
+    border: 1px solid blue; */
+    list-style-type: none;
+    width: 10px;
+    height: 10px;
     padding: 5px;
-    border: 1px solid blue;    
+        
     
 }
 
-/* nav li a {
+nav li a {
+    display: block;
     float: left;
     color: white;
     text-align: left;
@@ -43,7 +45,7 @@
 nav li a:hover {
     background-color: #DDDDDD;
     color: black;
-} */
+} 
 
 .content {
     grid-area: content;
