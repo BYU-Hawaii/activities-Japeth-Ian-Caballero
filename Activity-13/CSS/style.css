@@ -1,10 +1,10 @@
 .grid-container-body { /*Change background color for every change in screen sizes*/
     display: grid;
     grid-template-areas: 
-    'header'
-    'sidebar'
-    'content'
-    'footer';
+    'header header'
+    'sidebar sidebar'
+    'content content'
+    'footer footer';
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px;
     padding: 20px;
