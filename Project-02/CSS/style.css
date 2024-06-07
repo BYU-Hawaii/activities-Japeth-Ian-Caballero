@@ -67,3 +67,11 @@ figure img {
     border-radius: 8px;
     height: auto;
 }
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width:1024px) {
+    
+}
