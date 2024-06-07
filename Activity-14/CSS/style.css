@@ -7,11 +7,11 @@ body {
 .grid-container {
     display: grid;
     grid-template-areas: 
-        "header header header"
-        "sidebar sidebar sidebar"
-        "content content content"
-        "footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr;
+        "header"
+        "sidebar"
+        "content"
+        "footer";
+    grid-template-columns: 1fr;
 }
 
 .header {
@@ -100,12 +100,12 @@ body {
     }
 
     .gallery img {
-        flex: 1 1 45%;
+        width: calc(50% - 10px);
     }
 }
 
 @media (min-width: 1024px) {
     .gallery img {
-        flex: 1 1 30%;
+        width: calc(33.3333% - 10px);
     }
 }
