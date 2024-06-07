@@ -1,12 +1,10 @@
-/* Basic Reset */
-* {
+body {  /* Basic Reset */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Grid Container Layout */
-.grid-container {
+.grid-container {   /* Grid Container Layout */
     display: grid;
     grid-template-areas: 
         "header"
@@ -24,29 +22,29 @@
     padding: 20px;
 }
 
-.navigation {
+.sidebar {
     grid-area: navigation;
     background-color: lightslategray;
     padding: 20px;
 }
 
-.navigation ul {
+.sidebar ul {
     list-style-type: none;
 }
 
-.navigation li {
+.sidebar li {
     margin: 10px 0;
 }
 
-.navigation a {
+.sidebar a {
     text-decoration: none;
     color: white;
     display: block;
     padding: 10px;
 }
 
-.main-content {
-    grid-area: main-content;
+.content {
+    grid-area: content;
     background-color: springgreen;
     padding: 20px;
 }
@@ -58,32 +56,7 @@
     padding: 20px;
 }
 
-/* Responsive Navigation Bar */
-@media (min-width: 768px) {
-    .grid-container {
-        grid-template-areas: 
-            "header header"
-            "navigation main-content"
-            "footer footer";
-        grid-template-columns: 1fr 2fr;
-    }
-
-    .navigation ul {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .navigation li {
-        margin: 0;
-    }
-
-    .navigation a {
-        padding: 10px 20px;
-    }
-}
-
-/* Flexbox Gallery */
-.gallery {
+.gallery {  /* Flexbox Gallery */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -93,7 +66,28 @@
     flex: 1 1 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { /* Responsive Navigation Bar */
+    .grid-container {
+        grid-template-areas: 
+            "header header"
+            "sidebar content"
+            "footer footer";
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .sidebar ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sidebar li {
+        margin: 0;
+    }
+
+    .sidebar a {
+        padding: 10px 20px;
+    }
+
     .gallery img {
         flex: 1 1 45%;
     }
