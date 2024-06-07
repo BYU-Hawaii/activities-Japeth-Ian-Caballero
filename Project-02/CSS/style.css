@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color:#333333;
+    margin: 0;
+}
+
+header, footer {
+    background-color: #1C4C7F;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#footnote {
+    font-size: small;
+}
+
+nav {
+    background-color: #56585D;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #DDDDDD;
+    color: black;
+}
+
+section {
+    padding: 20px;
+    color: whitesmoke;
+}
+
+ul.custom-bullet {
+    list-style-image: url('../images/bulletpoint.png');
+}
+
+ul.custom-bullet li {
+    font-weight: bold;
+}
+
+mark {
+    background-color: lightslategray; 
+    color: #FFFFFF;
+}
+
+figure {
+    margin: 10px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 50%;
+    border-radius: 8px;
+    height: auto;
+}
