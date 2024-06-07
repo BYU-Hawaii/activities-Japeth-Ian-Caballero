@@ -7,12 +7,11 @@ body {  /* Basic Reset */
 .grid-container {   /* Grid Container Layout */
     display: grid;
     grid-template-areas: 
-        "header"
-        "navigation"
-        "main-content"
-        "footer";
-    gap: 10px;
-    padding: 20px;
+        "header header header"
+        "sidebar sidebar sidebar"
+        "content content content"
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .header {
@@ -23,9 +22,10 @@ body {  /* Basic Reset */
 }
 
 .sidebar {
-    grid-area: navigation;
+    grid-area: sidebar;
     background-color: lightslategray;
-    padding: 20px;
+    padding: 0;
+    overflow: hidden;
 }
 
 .sidebar ul {
@@ -33,14 +33,19 @@ body {  /* Basic Reset */
 }
 
 .sidebar li {
-    margin: 10px 0;
+    margin: 0px;
 }
 
 .sidebar a {
     text-decoration: none;
     color: white;
     display: block;
-    padding: 10px;
+    padding: 20px;
+}
+
+.sidebar li a:hover {
+    background-color: #DDDDDD;
+    color: black;
 }
 
 .content {
