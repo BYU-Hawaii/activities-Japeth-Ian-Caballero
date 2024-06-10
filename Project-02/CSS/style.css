@@ -5,8 +5,19 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    color:#333333;
+    color: #333333;
     margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "content"
+        "footer";
+    grid-gap: 10px;
+    padding: 10px;
 }
 
 header, footer {
@@ -16,17 +27,34 @@ header, footer {
     padding: 1em 0;
 }
 
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
 #footnote {
     font-size: small;
 }
 
-nav {
+.navbar {
+    grid-area: navbar;
     background-color: #56585D;
-    overflow: hidden;
 }
 
-nav a {
-    float: left;
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: block;
+}
+
+.navbar a {
     display: block;
     color: white;
     text-align: center;
@@ -34,14 +62,13 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+.navbar a:hover {
     background-color: #DDDDDD;
     color: black;
 }
 
-section {
-    padding: 20px;
-    color: whitesmoke;
+.content {
+    grid-area: content;
 }
 
 ul.custom-bullet {
@@ -69,9 +96,36 @@ figure img {
 }
 
 @media (min-width: 768px) {
-
+    .grid-container {
+        grid-template-areas:
+            "header header"
+            "navbar navbar"
+            "content content"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .navbar ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navbar ul li {
+        display: inline;
+    }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-areas:
+            "header header header"
+            "navbar navbar navbar"
+            "content content content"
+            "footer footer footer";
+        grid-template-columns: 1fr 2fr 1fr;
+    }
     
+    .content {
+        padding: 20px;
+    }
 }
