@@ -77,6 +77,7 @@ ul.custom-bullet {
 
 ul.custom-bullet li {
     font-weight: bold;
+    color: #FFFFFF;
 }
 
 mark {
@@ -90,7 +91,7 @@ figure {
 }
 
 figure img {
-    max-width: 50%;
+    width: 100%;
     border-radius: 8px;
     height: auto;
 }
@@ -98,8 +99,8 @@ figure img {
 @media (min-width: 768px) {
     .grid-container {
         grid-template-areas:
-            "header header"
             "navbar navbar"
+            "header header"
             "content content"
             "footer footer";
         grid-template-columns: 1fr 1fr;
@@ -113,13 +114,19 @@ figure img {
     .navbar ul li {
         display: inline;
     }
+
+    .content figure {
+        display: inline-block;
+        width: 48%;
+        margin: 1%;
+    }
 }
 
 @media (min-width: 1024px) {
     .grid-container {
         grid-template-areas:
-            "header header header"
             "navbar navbar navbar"
+            "header header header"
             "content content content"
             "footer footer footer";
         grid-template-columns: 1fr 2fr 1fr;
@@ -127,5 +134,11 @@ figure img {
     
     .content {
         padding: 20px;
+    }
+
+    .content figure {
+        display: inline-block;
+        width: 30%;
+        margin: 1.66%;
     }
 }
