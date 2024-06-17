@@ -1,3 +1,58 @@
+/* General Styles */
+.feedback {
+  color: #b32e2e; /* Reddish error color */
+  font-size: 0.8rem; /* Smaller font size for feedback messages */
+  margin-top: 5px; /* Add some margin above the feedback */
+}
+
+.valid-feedback {
+  color: #2e8b57; /* Greenish success color */
+  font-size: 0.8rem; /* Smaller font size for feedback messages */
+  margin-top: 5px; /* Add some margin above the feedback */
+}
+
+/* Form Field Styles (Base styles for all screen sizes) */
+label {
+  display: block; /* Labels above input fields by default */
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%; /* Input fields full width by default */
+  padding: 8px; /* Add some padding for better user experience */
+  border: 1px solid #ccc; /* Light border for input fields */
+  border-radius: 3px; /* Rounded corners for a more modern look */
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+  /* Styles for mobile devices (smaller screens) */
+
+  /* No changes needed here, base styles already work well */
+}
+
+@media only screen and (min-width: 768px) {
+  /* Styles for desktop views (larger screens) */
+
+  label {
+    display: inline-block; /* Labels to the left on desktop */
+    width: 120px;
+    text-align: right;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"] {
+    display: block; /* Align fields vertically on desktop */
+    margin-bottom: 15px;
+  }
+}
+
+/*
 .feedback {
   color: red;
   display: none;
@@ -6,4 +61,4 @@
 .valid-feedback {
   color: green;
   display: none; 
-}
+}*/
