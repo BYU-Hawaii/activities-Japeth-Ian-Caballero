@@ -28,29 +28,36 @@ input[type="password"] {
 }
 
 /* Media Queries for Responsive Design */
-@media only screen and (max-width: 768px) {
-  /* Styles for mobile devices (smaller screens) */
-
-  /* No changes needed here, base styles already work well */
-}
-
-@media only screen and (min-width: 768px) {
-  /* Styles for desktop views (larger screens) */
+@media (min-width: 768px) {
+  /* Styles for larger screens */
+  form {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Labels on the left, input fields on the right */
+    gap: 10px;
+    align-items: center;
+  }
 
   label {
-    display: inline-block; /* Labels to the left on desktop */
-    width: 120px;
-    text-align: right;
+    text-align: right; /* Align labels to the right */
+    margin-bottom: 0;
   }
 
   input[type="text"],
   input[type="email"],
   input[type="tel"],
   input[type="password"] {
-    display: block; /* Align fields vertically on desktop */
-    margin-bottom: 15px;
+    width: auto; /* Adjust width for larger screens */
+  }
+
+  .feedback, .valid-feedback {
+    grid-column: 2 / 3; /* Align feedback under the input fields */
+  }
+
+  button {
+    grid-column: 2 / 3; /* Align button with the input fields */
   }
 }
+
 
 /*
 .feedback {
