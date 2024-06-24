@@ -60,6 +60,27 @@ nav ul li a {
     margin: 0 auto 10px;
 }
 
+.game-section {
+    text-align: center;
+    padding: 2em;
+}
+
+#game-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gameCanvas {
+    border: 1px solid #000;
+}
+
+#score {
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
 footer {
     background-color: #4CAF50;
     color: white;
