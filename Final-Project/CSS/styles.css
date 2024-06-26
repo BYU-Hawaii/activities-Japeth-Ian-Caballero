@@ -198,6 +198,7 @@ input[type="text"] {
             "footer footer footer";
         grid-template-columns: 1fr 2fr 1fr;
     }
+    
     .intro {
         padding: 2.5em;
     }
