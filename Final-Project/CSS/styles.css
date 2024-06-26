@@ -5,31 +5,48 @@ body {
     background-color: #f9f9f9;
 }
 
-header {
+header, footer {
     background-color: #4CAF50;
     color: white;
+    text-align: center;
     padding: 1em;
-    text-align: center;
+    width: 100%;
 }
 
-nav ul {
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #56585D;
+}
+
+.navbar ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: 0;
 }
 
-nav ul li {
-    flex: 1 1 auto;
-    text-align: center;
-    margin-right: 1em;
+.navbar ul li {
+    display: block;
 }
 
-nav ul li a {
+.navbar a {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #DDDDDD;
+    color: black;
 }
 
 .intro {
@@ -93,15 +110,6 @@ nav ul li a {
 
 #restartButton:hover {
     background-color: #45a049;
-}
-
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    width: 100%;
-    bottom: 0;
 }
 
 @media (min-width: 768px) {
