@@ -60,10 +60,18 @@ footer {
     color: black;
 }
 
+.content {
+    grid-area: content;
+}
+
 .intro {
     text-align: center;
     padding: 2em;
     background-color: darkgray;
+}
+
+.intro img {
+    max-width: 100%;
 }
 
 .features {
@@ -102,6 +110,7 @@ footer {
 
 #gameCanvas {
     border: 1px solid #000;
+    max-width: 100%;
 }
 
 #score {
@@ -121,6 +130,10 @@ footer {
 
 #restartButton:hover {
     background-color: #45a049;
+}
+
+.mission-section img {
+    max-width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -168,7 +181,4 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
-    nav ul li {
-        margin-right: 1.5em;
-    }
 }
