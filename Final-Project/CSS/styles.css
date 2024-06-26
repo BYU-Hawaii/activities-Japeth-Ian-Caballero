@@ -81,12 +81,25 @@ nav ul li a {
     margin-top: 1em;
 }
 
+#restartButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#restartButton:hover {
+    background-color: #45a049;
+}
+
 footer {
     background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 1em;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
