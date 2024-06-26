@@ -5,6 +5,17 @@ body {
     background-color: #f9f9f9;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "footer";
+    grid-gap: 10px;
+    padding: 10px;
+}
+
 header, footer {
     background-color: #4CAF50;
     color: white;
@@ -57,7 +68,7 @@ footer {
 
 .features {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1 fr;
     gap: 20px;
     padding: 20px;
 }
