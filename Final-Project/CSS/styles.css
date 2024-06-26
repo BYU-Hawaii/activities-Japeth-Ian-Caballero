@@ -10,7 +10,7 @@ body {
     grid-template-areas:
         "header"
         "navbar"
-        "main"
+        "content"
         "footer";
     grid-gap: 10px;
     padding: 10px;
@@ -124,6 +124,15 @@ footer {
 }
 
 @media (min-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            "navbar navbar"
+            "header header"
+            "content content"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+    }
+
     .intro {
         padding: 2em;
     }
@@ -132,12 +141,25 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    nav ul li {
-        margin-right: 1em;
+    .navbar ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navbar ul li {
+        display: inline;
     }
 }
 
 @media (min-width: 1024px) {
+    .grid-container {
+        grid-template-areas:
+            "navbar navbar navbar"
+            "header header header"
+            "content content content"
+            "footer footer footer";
+        grid-template-columns: 1fr 2fr 1fr;
+    }
     .intro {
         padding: 2.5em;
     }
